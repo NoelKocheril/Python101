@@ -54,7 +54,7 @@ print(x) # Sally
 
 We will return to variables and types at a later point in our course.
 
-### Exercise 2.1: Creating a variable and print it out
+### Exercise 2.1: Creating variables and print them out
 
 In this exercise, I would like you to create three variables:
 
@@ -451,8 +451,8 @@ The first two numbers are 0 and 1.
 
 For example: 0, 1, 1, 2, 3, 5, 8, 13, 21
 
-print out the first 20 digits in the sequence.
+Print out the first 20 digits in the sequence (After 0 and 1).
 
-Starter File for this exercise can be found [here](https://github.com/NoelKocheril/Python101/blob/main/Lesson%2002/Problems/Exercise2_4.py)
+Starter File for this exercise can be found [here](https://github.com/NoelKocheril/Python101/blob/main/Lesson%2002/Problems/Exercise2_4.py).
 
 You can see the solution [here](https://github.com/NoelKocheril/Python101/blob/main/Lesson%2002/Solutions/Exercise2_4.py).

@@ -1,4 +1,4 @@
-# Exercise 2.1: Creating a variable and print it out
+# Exercise 2.1: Creating variables and print them out
 #
 # In this exercise, I would like you to create three variables:
 #
