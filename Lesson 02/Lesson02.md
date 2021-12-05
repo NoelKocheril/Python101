@@ -16,7 +16,7 @@ For example, when looking at the following code:
 
 What does it mean to add a number to a letter? Should we interpret this as concatenating the two strings "a" and "1" together? Should this result in an error? Should 'a' be converted into a number? If so, what should the letter 'a' to equal to as a number?
 
-Note 1: Python is a dynamically typed language and issues like this will crop up very often which will only present itself at run time (when the code is executing), like when trying to add two varaibles together.
+Note 1: Python is a dynamically typed language and issues like this will crop up very often which will only present itself at run time (when the code is executing), like when trying to add two variables together.
 
 Note 2: Python handles this situation ("'a' + 1") by raising an TypeError exception. (We will get into the details of this at a later point in the course)
 
@@ -54,9 +54,9 @@ print(x) # Sally
 
 We will return to variables and types at a later point in our course.
 
-### Excerise 2.1: Creating a variable and print it out
+### Exercise 2.1: Creating a variable and print it out
 
-In this excerise, I would like you to create three variables:
+In this exercise, I would like you to create three variables:
 
 1. Your Name
 2. Your Age
@@ -65,6 +65,8 @@ In this excerise, I would like you to create three variables:
 and print them out with a blurb before each. For example, "My Name is: {Name}".
 
 Note: You can convert an integer or a list to a string by using the str() function.
+
+Starter File for this exercise can be found [here](https://github.com/NoelKocheril/Python101/blob/main/Lesson%2002/Problems/Exercise2_1.py)
 
 You can see the solution [here](https://github.com/NoelKocheril/Python101/blob/main/Lesson%2002/Solutions/Exercise2_1.py).
 
@@ -90,7 +92,7 @@ if 5 > 2:
 print("Five is greater than two.") # IndentationError: expected an indented block after 'if' statement on line ##
 ```
 
-The number of indentation is upto you as a developer, but it is suggested that you remain consistant throughout your code.
+The number of indentation is up to you as a developer, but it is suggested that you remain consistent throughout your code.
 
 ```
 if 5 > 2:
@@ -124,7 +126,7 @@ if x > 5:
             print("X is greater than 20")
 ```
 
-### Excerise 2.2 Fix the indentation in this code
+### Exercise 2.2 Fix the indentation
 
 Without the use of the auto-indentation correction from VS Code, fix the below indentation from [here](https://github.com/NoelKocheril/Python101/blob/main/Lesson%2002/Problems/Exercise2_2.py).
 
@@ -243,6 +245,31 @@ elif (grade < 50) and (grade >= 0):
 else:
     print("Invalid grade")
 ```
+
+### Exercise 2.3 Exam Attendance Checker
+
+A student is only allowed to attend the exam if their attendance is greater than or equal to 75%.
+
+Take the following inputs from the user:
+
+1. The number of classes held.
+2. The number of classes attended.
+
+and print:
+
+1. The percentage of classes attended.
+2. Whether or not the student is allowed to attend the exam.
+
+Note: You can get input from the user via the function input()
+
+```
+# The input function gets the input from the user, the int function converts the input to a number
+numberOfClassesHeld = int(input("Enter the number of classes held: "))
+```
+
+Starter File for this exercise can be found [here](https://github.com/NoelKocheril/Python101/blob/main/Lesson%2002/Problems/Exercise2_3.py)
+
+You can see the solution [here](https://github.com/NoelKocheril/Python101/blob/main/Lesson%2002/Solutions/Exercise2_3.py).
 
 ## Loops
 

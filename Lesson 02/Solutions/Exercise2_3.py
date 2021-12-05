@@ -16,3 +16,13 @@
 
 # The input function gets the input from the user, the int function converts the input to a number
 numberOfClassesHeld = int(input("Enter the number of classes held: "))
+numberOfClassesAttended = int(input("Enter the number of classes attended: "))
+
+attendancePercentage = (numberOfClassesAttended / numberOfClassesHeld) * 100
+
+print("The percentage of classes attended is: " + str(attendancePercentage))
+
+if attendancePercentage >= 75:
+    print("You are allowed to enter than exam.")
+else:
+    print("You are not allowed to enter than exam.")
