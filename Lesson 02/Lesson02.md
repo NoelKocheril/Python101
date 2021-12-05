@@ -1,4 +1,4 @@
-# Lesson 02 - Basic Python Syntax and Data Structures
+# Lesson 02 - Basic Python Syntax, If Statements, and Loops
 
 ## Table of Contents
 
@@ -273,152 +273,186 @@ You can see the solution [here](https://github.com/NoelKocheril/Python101/blob/m
 
 ## Loops
 
+Within programming, we tend to want to write similar logic across multiple values. For Example, looping from one to a hundred or a list of objects and doing a set of instructions on each value. In order to do this, we can employ different types of loops like the "for" loop and the "while" loop.
+
 ### For Loops
+
+The for loop can be used to loop through an iterable object such as a list, a string, or a dictionary. For example:
+
+```
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    print(x)
+
+# apple
+# banana
+# cherry
+```
+
+If we were to attempt to use the same logic for a string, we would get each character in the string. For example:
+
+```
+for x in "banana":
+    print(x)
+
+# b
+# a
+# n
+# a
+# n
+# a
+```
+
+Within python, in order to quickly loop through a set of numbers we can use the function "range". For example:
+
+```
+for x in range(6):
+    print(x)
+
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+```
+
+Note: the range function will go from values from 0 to 5, not 0 to 6
+
+We can also add an extra parameter to the range function in order to start from a different value. For example:
+
+```
+for x in range(2, 6):
+    print(x)
+
+# 2
+# 3
+# 4
+# 5
+```
 
 ### While Loops
 
+A while loop can be used when we don't necessarily know when the loop should end. The loop will keep running while the condition it is provided is true. For example:
+
+```
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+```
+
+Note: It is very important that we increment i, otherwise the loop will continue to run forever. If you are in this scenario, you can typically hit "CTRL + C" to stop your program.
+
 ### Nested Loops
+
+A nested loop is a situation where we have a loop inside of another loop. These are typically used for working with multiple dimensions lists like in a table. When we have a nested loop, the inner loop will be repeated from the beginning with every iteration of the outer loop.
+
+For example:
+
+```
+adjectives = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "orange"]
+
+for x in adjectives:
+    for y in fruits:
+        print(x, y)
+
+# red apple
+# red banana
+# red orange
+# big apple
+# big banana
+# big orange
+# tasty apple
+# tasty banana
+# tasty orange
+```
 
 ### break
 
+Occasionally we will want to preemptively exit out of a loop, in order to do this we can use the "break" keyword. For example:
+
+```
+fruits = ["apple", "banana", "orange"]
+
+for x in fruits:
+    print(x)
+    if x == "banana":
+        break
+
+# apple
+# banana
+```
+
 ### continue
+
+In order scenarios, we will want to just skip over the current iteration rather than stop the loop completely. This can be completed with the "continue" keyword. For example:
+
+```
+fruits = ["apple", "banana", "orange"]
+
+for x in fruits:
+    if x == "banana":
+        continue
+    print(x)
+
+# apple
+# orange
+```
 
 ### pass
 
-## Typing
-
-### Statically Typed vs Dynamically Typed
-
-As previously mentioned Python is a dynamically typed language, but what exactly does that mean?
-
-A programming language is deemed to be a dynamically typed language when the variables are assigned a type at runtime rather than at compile time.
-
-For Example:
-
-Statically Typed Language, i.e. Java, C, C++
+Loops can not be empty, but if for whatever reason you have a loop with no content you can put in the "pass" keyword to avoid getting an error. For example:
 
 ```
-int x = 5;
+for x in [1, 2, 3]:
+    pass
 ```
 
-Dynamically Typed Language, i.e. Python, JavaScript, Lua
+### else with a loop
+
+The "else" keyword can be used to execute code when a loop is finished. For example:
 
 ```
-x = 5;
+for x in range(6):
+    print(x)
+else:
+    print("Finally finished!")
+
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+# Finally finished!
 ```
 
-Note: In a statically typed language we specific the type of the variable when it's created, but in a dynamically typed language the compiler will figure that for us once it begins running the code.
-
-What are the implications of using a dynamically typed language?
-
-You are able to use the same variable for multiple purposes, for example:
+Note: The "else" block will not be executed when the loop is stopped using the break statement.
 
 ```
-x = 5
-x = "Hello, World"
-x = ["This", "is", "an", "array"]
+for x in range(6):
+    if x == 3: break
+    print(x)
+else:
+    print("Finally finished!") # This will never be executed.
+
+# 0
+# 1
+# 2
 ```
 
-This is a level of abstraction that is removed from the developer by the language, but can also be the cause of potential pit falls when a variable is overused unnecessarily.
+### Exercise 2.4 Fibonacci Sequence
 
-## Data Structures
+The Fibonacci sequence is a series of numbers where the next number is found by adding the two numbers before it.
 
-### List
+The first two numbers are 0 and 1.
 
-A list is a sequence of data that can be stored within a single object.
+For example: 0, 1, 1, 2, 3, 5, 8, 13, 21
 
-A list is ordered, changeable/mutable, and allow for duplicate values.
+print out the first 20 digits in the sequence.
 
-A list can be created via the following code:
+Starter File for this exercise can be found [here](https://github.com/NoelKocheril/Python101/blob/main/Lesson%2002/Problems/Exercise2_4.py)
 
-```
-my_list = ["Noel", "Steve", "Jim"]
-```
-
-A list is created with square brackets.
-
-Note: Python does not require all items in the list to be of the same type.
-
-```
-my_list = ["Noel", 3, [5]]
-```
-
-### Tuple
-
-A tuple can also be used to store multiple values in a single object.
-
-A tuple is ordered, _*unchangeable/immutable*_, and allow for duplicate values.
-
-```
-my_tuple = ("Noel", "Steve", "Jim")
-```
-
-A list is created with round brackets.
-
-Like a list, a tuple can have multiple values of multiple types.
-
-Note: In order to create a tuple with a single element, you must include a trailing comma
-
-```
-tuple1 = ("apple",)
-print(type(tuple1))
-
-#NOT a tuple
-tuple2 = ("apple")
-print(type(tuple2))
-```
-
-### Set
-
-A set is a group of data that can be stored within a single object.
-
-A set is _*unordered*_, _*unchangeable/immutable*_, and _*does not allow*_ for duplicate values.
-
-A set can be created via the following code:
-
-```
-my_set = {"Noel", "Steve", "Jim"}
-```
-
-A set is created with curly brackets.
-
-If you try to create a set with duplicate values, you will end up with only one instance of the value. For Example:
-
-```
-my_set = {"Noel", "Steve", "Noel"}
-print(my_set) # {'Steve', 'Noel'}
-```
-
-Note: Python does not require all items in the set to be of the same type.
-
-```
-my_set = {"Noel", 3, [5]}
-```
-
-### Dictionary
-
-A dictionary is a set of key-value pairs that can be used to store multiple sets of data in a single object.
-
-A dictionary is ordered, changeable/mutable, and _*does not*_ allow for duplicate values.
-
-A dictionary can be created via the following code:
-
-```
-my_list = {"Name": "Noel", "Friend": "Steve", "Enemy": "Jim"]
-```
-
-A dictionary is created with curly brackets where the first object before the colon is the key and object after the colon is value.
-
-Unlike Lists, Sets, and Tuples dictionaries are accessed using the key object rather than an index.
-
-Like a set, if we try to create a dictionary with two repeating keys. We end up with a dictionary with the most recent assignment for the given key. For Example:
-
-```
-my_dict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964,
-  "year": 2020
-}
-print(my_dict) # {'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
-```
+You can see the solution [here](https://github.com/NoelKocheril/Python101/blob/main/Lesson%2002/Solutions/Exercise2_4.py).
