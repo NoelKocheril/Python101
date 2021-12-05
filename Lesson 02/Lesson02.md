@@ -141,43 +141,7 @@ Comments can be added at any point in a line of code, for example:
 print("Hello") # This is a valid comment
 ```
 
-Note: Within VS Code, you can quickly comment and uncomment out a block of code using the shortcut key CTRL + SHIFT + /
-
-## Typing
-
-### Statically Typed vs Dynamically Typed
-
-As previously mentioned Python is a dynamically typed language, but what exactly does that mean?
-
-A programming language is deemed to be a dynamically typed language when the variables are assigned a type at runtime rather than at compile time.
-
-For Example:
-
-Statically Typed Language, i.e. Java, C, C++
-
-```
-int x = 5;
-```
-
-Dynamically Typed Language, i.e. Python, JavaScript, Lua
-
-```
-x = 5;
-```
-
-Note: In a statically typed language we specific the type of the variable when it's created, but in a dynamically typed language the compiler will figure that for us once it begins running the code.
-
-What are the implications of using a dynamically typed language?
-
-You are able to use the same variable for multiple purposes, for example:
-
-```
-x = 5
-x = "Hello, World"
-x = ["This", "is", "an", "array"]
-```
-
-This is a level of abstraction that is removed from the developer by the language, but can also be the cause of potential pit falls when a variable is overused unnecessarily.
+Note: Within VS Code, you can quickly comment and uncomment out a block of code using the shortcut key "CTRL + /"
 
 ## Conditional Statements
 
