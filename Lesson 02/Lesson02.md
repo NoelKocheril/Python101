@@ -162,16 +162,16 @@ This is a level of abstraction that is removed from the developer by the languag
 
 ## Conditional Statements
 
-### Basic IF Statement
+### Basic If Statement
 
-The basic IF statement in it's simplest form would look like:
+The basic If statement in it's simplest form would look like:
 
 ```
 if <expr>:
     <statement>
 ```
 
-In the above form, \<expr\> is an expression that will be evaluated as Boolean and if it is "Truthy", we will evaluate the code in the \<statement\>.
+In the above form, &lt;expr&gt; is an expression that will be evaluated as Boolean and if it is "Truthy", we will evaluate the code in the &lt;statement&gt;.
 
 Note: The colon after the expression is required.
 
