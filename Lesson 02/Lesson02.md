@@ -111,6 +111,19 @@ Note: To quickly indent your code in VS Code, you can use the shortcut keys \
 Indent: CTRL + ] \
 Dedent: CTRL + [
 
+We can also have multiple levels of indentation, for example:
+
+```
+x = 100
+
+if x > 5:
+    print("X is greater than 5")
+    if x > 10:
+        print("X is greater than 10")
+        if x > 20:
+            print("X is greater than 20")
+```
+
 ## Comments
 
 Comments within Python are denoted by the pound/hashtag symbol ("#"). Any symbols after the pound/hashtag are ignored by the language and can be used to improve readability, add context, and quickly disable blocks of code.
