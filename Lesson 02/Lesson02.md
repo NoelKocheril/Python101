@@ -56,6 +56,20 @@ print(x) # Sally
 
 We will return to variables and types at a later point in our course.
 
+### Excerise 2.1: Creating a variable and print it out
+
+In this excerise, I would like you to create three variables:
+
+1. Your Name
+2. Your Age
+3. A list of places you like
+
+and print them out with a blurb before each. For example, "My Name is: {Name}".
+
+Note: You can convert an integer or a list to a string by using the str() function.
+
+You can see the solution [here](https://github.com/NoelKocheril/Python101/blob/main/Lesson%2002/Solutions/Exercise2_1.py).
+
 ## Indentation
 
 An important concept within Python is indentation. Indentation refers to the spaces at the beginning of a line of code. In other programming languages, indentation is used purely for readability purposes; Python, however, uses indentation to denote blocks of code.
