@@ -8,19 +8,17 @@
 
 Within a programming language syntax is the set of rules that defines how the combinations of symbols can be structured to create statements and/or expressions. In order to make sure both the programming language and the developer are able to create end product, they both must agree to the same set of rules in which the source code is written. However, it is to be noted that the programming language will take every instance of source code literally and just because the developer thinks something should interact a certain way does not necessarily mean that is what the source code will do.
 
-For example:
-
-When looking at the following code:
+For example, when looking at the following code:
 
 ```
 'a' + 1
 ```
 
-What does it mean to add a number to a letter? Should we interpret this as concatenating the two strings "a" and "1" together? Should this result in an error? Should 'a' be converted into a number? If so, what should the letter to equal to as a number?
+What does it mean to add a number to a letter? Should we interpret this as concatenating the two strings "a" and "1" together? Should this result in an error? Should 'a' be converted into a number? If so, what should the letter 'a' to equal to as a number?
 
-Note 1: Python is a dynamically typed language and issues like this will crop up very often which will only present itself at run time (when the code is executing).
+Note 1: Python is a dynamically typed language and issues like this will crop up very often which will only present itself at run time (when the code is executing), like when trying to add two varaibles together.
 
-Note 2: Python handles this situation by raising an TypeError exception. (We will get into the details of this at a later point in the course)
+Note 2: Python handles this situation ("'a' + 1") by raising an TypeError exception. (We will get into the details of this at a later point in the course)
 
 ## Creating a Variable
 
@@ -38,7 +36,7 @@ Age = 24
 FavoritePlaces = ["Denny's", "Home", "Gym"]
 ```
 
-The above code creates three separate variables, one that is a String that contains my name, and one that contains my current age, and the last one that contains a list of my favorite places.
+The above code creates three separate variables, one that is a string that contains my name, and one that contains my current age, and the last one that contains a list of my favorite places.
 
 We can use these variables at a later point in our code, for example:
 
@@ -80,6 +78,8 @@ For example:
 if 5 > 2:
     print("Five is greater than two.")
 ```
+
+Note: Using Spaces and Tabs will provide different levels of indentation, luckily VS Code will auto-convert this for you. You should be careful when using other IDEs or the command line that do not correct this for you.
 
 The print statement is a block of code that is a part of the previous indentation level (the IF statement).
 
@@ -123,6 +123,12 @@ if x > 5:
         if x > 20:
             print("X is greater than 20")
 ```
+
+### Excerise 2.2 Fix the indentation in this code
+
+Without the use of the auto-indentation correction from VS Code, fix the below indentation from [here](https://github.com/NoelKocheril/Python101/blob/main/Lesson%2002/Problems/Exercise2_2.py).
+
+You can see the solution [here](https://github.com/NoelKocheril/Python101/blob/main/Lesson%2002/Solutions/Exercise2_2.py).
 
 ## Comments
 
@@ -177,16 +183,18 @@ This is a level of abstraction that is removed from the developer by the languag
 
 ### Basic If Statement
 
-The basic If statement in it's simplest form would look like:
+The basic "if" statement in it's simplest form would look like:
 
 ```
 if <expr>:
     <statement>
 ```
 
-In the above form, &lt;expr&gt; is an expression that will be evaluated as Boolean and if it is "Truthy", we will evaluate the code in the &lt;statement&gt;.
+In the above form, &lt;expr&gt; is an expression that will be evaluated as boolean and if it is "truthy", we will evaluate the code in the &lt;statement&gt;.
 
-Note: The colon after the expression is required.
+Note 1: The colon after the expression is required.
+
+Note 2: We will discuss "truthy" and "falsy" at a later point in the course. For now, if the expression is equal to true we will do one block of statements.
 
 Code that is outside of the indented code block will be executed regardless of whether the expression is true or false.
 
@@ -198,7 +206,7 @@ print("This will always print.")
 
 ### If Else
 
-The basic IF statement can be expanded to do one set of code if our expression is equal to True and another if it is equal to False. This is accomplished using the "else" keyword:
+The basic "if" statement can be expanded to do one set of code if our expression is equal to True and another if it is equal to False. This is accomplished using the "else" keyword:
 
 ```
 if <expr>:
@@ -365,7 +373,7 @@ Unlike Lists, Sets, and Tuples dictionaries are accessed using the key object ra
 Like a set, if we try to create a dictionary with two repeating keys. We end up with a dictionary with the most recent assignment for the given key. For Example:
 
 ```
-my_dict =	{
+my_dict = {
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964,
