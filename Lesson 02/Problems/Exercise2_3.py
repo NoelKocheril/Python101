@@ -13,6 +13,8 @@
 # 2. Whether or not the student is allowed to attend the exam.
 #
 # Note: You can get input from the user via the function input()
+#
+# Bonus: If the student has a medical cause, allow them to attend the exam.
 
 # The input function gets the input from the user, the int function converts the input to a number
 numberOfClassesHeld = int(input("Enter the number of classes held: "))

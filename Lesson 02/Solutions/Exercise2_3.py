@@ -13,6 +13,8 @@
 # 2. Whether or not the student is allowed to attend the exam.
 #
 # Note: You can get input from the user via the function input()
+#
+# Bonus: If the student has a medical cause, allow them to attend the exam.
 
 # The input function gets the input from the user, the int function converts the input to a number
 numberOfClassesHeld = int(input("Enter the number of classes held: "))
@@ -20,9 +22,19 @@ numberOfClassesAttended = int(input("Enter the number of classes attended: "))
 
 attendancePercentage = (numberOfClassesAttended / numberOfClassesHeld) * 100
 
-print("The percentage of classes attended is: " + str(attendancePercentage))
+
+msg = ""
 
 if attendancePercentage >= 75:
-    print("You are allowed to enter than exam.")
+    msg = "You are allowed to enter than exam."
 else:
-    print("You are not allowed to enter than exam.")
+    medicalCause = input(
+        "Do you have a medical reason for missing classes? (Y/N) "
+    ).upper()
+    if medicalCause == "Y":
+        msg = "You are allowed to enter than exam."
+    else:
+        msg = "You are not allowed to enter than exam."
+
+print("The percentage of classes attended is: " + str(attendancePercentage) + "%")
+print(msg)
