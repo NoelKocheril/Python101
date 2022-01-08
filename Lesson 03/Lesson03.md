@@ -165,7 +165,7 @@ A dictionary is ordered, changeable/mutable, and _*does not*_ allow for duplicat
 A dictionary can be created via the following code:
 
 ```
-my_list = {"Name": "Noel", "Friend": "Steve", "Enemy": "Jim"]
+my_list = {"Name": "Noel", "Friend": "Steve", "Enemy": "Jim"}
 ```
 
 A dictionary is created with curly brackets where the first object before the colon is the key and object after the colon is value.
