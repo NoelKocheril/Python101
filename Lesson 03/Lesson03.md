@@ -36,6 +36,18 @@ x = ["This", "is", "an", "array"]
 
 This is a level of abstraction that is removed from the developer by the language, but can also be the cause of potential pit falls when a variable is overused unnecessarily.
 
+## General Types
+
+### Note: Python will try to figure out what the type of any variable is, and you do not need to specific what the type is like in other programming languages. However, it should be noted that specificizing the type can help prevent potential issues that may come up in the future. For example, if your program expects a number but you provide a word (also known as a string) your IDE can pick up on that quicker.
+
+### Integer (int)
+
+### float
+
+### string (str)
+
+### boolean (bool)
+
 ## Data Structures
 
 ### List
