@@ -1,0 +1,38 @@
+Capstone Project Ideas
+
+Custom Mirror - Raspberry Pi - https://www.instructables.com/How-to-Build-a-Raspberry-Pi-Smart-Mirror/
+Discord Bot
+Machine Learning - Identify Objects (Cats vs Dogs) 
+Rhino API - Models
+Mortgage Calculator - Calculate the monthly payments of a fixed term mortgage over given Nth terms at a given interest rate. Also figure out how long it will take the user to pay back the loan. For added complexity, add an option for users to select the compounding interval (Monthly, Weekly, Daily, Continually).
+Calculator - A simple calculator to do basic operators. Make it a scientific calculator for added complexity.
+Unit Converter (temp, currency, volume, mass and more) - Converts various units between one another. The user enters the type of unit being entered, the type of unit they want to convert to and then the value. The program will then make the conversion.
+Alarm Clock - A simple clock where it plays a sound after X number of minutes/seconds or at a particular time.
+Sorting Visualizer - Implement multiple sorting algorithms: Merge sort, bubble sort, quick sort, insertion sort, Bogo sort
+RSS Feed Reader - Given a link to RSS/Atom Feed, get all posts and display them.
+Guestbook / Journal - A simple application that allows people to add comments or write journal entries. It can allow comments or not and timestamps for all entries. Could also be made into a shout box. Optional: Deploy it on Google App Engine or Heroku or any other PaaS (if possible, of course).
+Regex Query Tool - A tool that allows the user to enter a text string and then in a separate control enter a regex pattern. It will run the regular expression against the source text and return any matches or flag errors in the regular expression.
+FTP Program - A file transfer program which can transfer files back and forth from a remote web sever.
+Port Scanner - Enter an IP address and a port range where the program will then attempt to find open ports on the given computer by connecting to each of them. On any successful connections mark the port as open.
+Country from IP Lookup - Enter an IP address and find the country that IP is registered in. Optional: Find the Ip automatically.
+Whois Search Tool - Enter an IP or host address and have it look it up through whois and return the results to you.
+Site Checker with Time Scheduling - An application that attempts to connect to a website or server every so many minutes or a given time and check if it is up. If it is down, it will notify you by email or by posting a notice on screen.
+Airline / Hotel Reservation System - Create a reservation system which books airline seats or hotel rooms. It charges various rates for particular sections of the plane or hotel. Example, first class is going to cost more than coach. Hotel rooms have penthouse suites which cost more. Keep track of when rooms will be available and can be scheduled.
+Bank Account Manager - Create a class called Account which will be an abstract class for three other classes called CheckingAccount, SavingsAccount and BusinessAccount. Manage credits and debits from these accounts through an ATM style program.
+Family Tree Creator - Create a class called Person which will have a name, when they were born and when (and if) they died. Allow the user to create these Person classes and put them into a family tree structure. Print out the tree to the screen.
+Bulk Thumbnail Creator - Picture processing can take a bit of time for some transformations. Especially if the image is large. Create an image program which can take hundreds of images and converts them to a specified size in the background thread while you do other things. For added complexity, have one thread handling re-sizing, have another bulk renaming of thumbnails etc.
+Page Scraper - Create an application which connects to a site and pulls out all links, or images, and saves them to a list. Optional: Organize the indexed content and don’t allow duplicates. Have it put the results into an easily searchable index file.
+CAPTCHA Maker - Ever see those images with letters a numbers when you signup for a service and then asks you to enter what you see? It keeps web bots from automatically signing up and spamming. Try creating one yourself for online forms.
+Quiz Maker - Make an application which takes various questions from a file, picked randomly, and puts together a quiz for students. Each quiz can be different and then reads a key to grade the quizzes.
+Create Zip File Maker - The user enters various files from different directories and the program zips them up into a zip file. Optional: Apply actual compression to the files. Start with Huffman Algorithm.
+Travel Planner System - Make a system that allows users to put together their own little travel itinerary and keep track of the airline / hotel arrangements, points of interest, budget and schedule.
+Plex Request Portal - Make a portal that allows users to to add requests for shows and movies that they would like on a Plex Server
+Caesar cipher - Implement a Caesar cipher, both encoding and decoding. The key is an integer from 1 to 25. This cipher rotates the letters of the alphabet (A to Z). The encoding replaces each letter with the 1st to 25th next letter in the alphabet (wrapping Z to A). So key 2 encrypts "HI" to "JK", but key 20 encrypts "HI" to "BC". This simple "monoalphabetic substitution cipher" provides almost no security, because an attacker who has the encoded message can either use frequency analysis to guess the key, or just try all 25 keys. Try different types of ciphers, Monoalphabetic, Hill Cipher, or Playfair Cipher.
+Password Cracker Tool - Password cracker, given a list of hashed passwords attempt to use multiple different methodologies to crack their passwords. This can include Brute Force, Pattern Cracking, Rainbow Tables, Dictionary Attacks.
+Optical Character Recognition (OCR)
+Chatbot
+Tic-Tac-Toe
+Sudoku
+Chess
+Ludo Game
+BlackJack
