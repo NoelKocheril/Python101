@@ -40,13 +40,47 @@ This is a level of abstraction that is removed from the developer by the languag
 
 ### Note: Python will try to figure out what the type of any variable is, and you do not need to specific what the type is like in other programming languages. However, it should be noted that specificizing the type can help prevent potential issues that may come up in the future. For example, if your program expects a number but you provide a word (also known as a string) your IDE can pick up on that quicker.
 
+We can see what python thinks the type is for any given value using the function `type`, for example:
+
+```
+type("This is a string") # <class 'str'>
+type(123) # <class 'int'>
+type(0.5) # <class 'float'>
+type(True) # <class 'bool'>
+```
+
 ### Integer (int)
+
+The integer type is the numeric type for a whole number. For example, 1, 2, 3... would all be integers. This will likely be one of the most common types you will use when programming.
 
 ### float
 
+The float type is representative of any decimal value. For example, 0.5, .3333, 0.1. This will typically be used when using percentages and similar use cases.
+
+Note: floats are stored as base 2 (binary) values and this can cause rounding errors when trying to add values together.
+
 ### string (str)
 
+The string type is a collection of characters surrounded by quotes. For example, "Test", "Hello, World!", etc.
+
+Note: Strings can be represented using single, double, or triple quotes:
+
+'This is valid.' \
+"This is also valid." \
+'''This is also valid, too.'''
+
 ### boolean (bool)
+
+The boolean type is a True or False value. Using the `bool` function, we can convert any value to it's boolean value. For example:
+
+```
+bool(1) # True
+bool(0) # False
+bool([]) # False
+bool([12]) # True
+bool("") # False
+bool("Hmmmm") # True
+```
 
 ## Data Structures
 
