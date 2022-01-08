@@ -1,4 +1,4 @@
-# For this lesson I would like you to confirm that your installion of python and VS Code are all working appropraitely.
+# For this lesson I would like you to confirm that your installion of python and VS Code are all working appropriately.
 #
 # 1. Open Your Terminal
 # 2. Type in "Python3 --version" and let me know what you get back
