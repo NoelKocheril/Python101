@@ -4,7 +4,11 @@ import unittest
 
 
 def asciiToInteger(string: str, num: int = 0) -> int:
-    return -1
+    if len(string) == 1:
+        return int(string) + (num * 10)
+
+    num = int(string[0]) + (num * 10)
+    return asciiToInteger(string[1:], num)
 
 
 class asciiToIntegerTest(unittest.TestCase):
